@@ -242,6 +242,10 @@ return [
             'text' => 'search',
         ],
         [
+            'text' => 'admin',
+            'route'  => 'admin.index',
+        ],
+        [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
@@ -472,5 +476,5 @@ return [
     |
     */
 
-    'livewire' => false,
+    'livewire' => true,
 ];

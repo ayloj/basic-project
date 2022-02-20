@@ -71,6 +71,6 @@ class User extends Authenticatable
      * The return value should be a string, not a route or url
      */
     public function adminlte_profile_url(){
-        return 'profile/username';
+        return route('profile.show');
     }
 }
