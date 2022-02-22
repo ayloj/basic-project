@@ -242,8 +242,14 @@ return [
             'text' => 'search',
         ],
         [
-            'text' => 'admin',
-            'route'  => 'admin.index',
+            'text'   => 'Admin',
+            'icon'   => 'fa fa-toolbox',
+            'submenu' => [
+                [
+                    'text' => 'Roles & Permisos',
+                    'route'  => 'admin.index',
+                ],
+            ]
         ],
         [
             'text' => 'blog',
