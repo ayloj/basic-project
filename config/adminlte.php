@@ -411,7 +411,7 @@ return [
             ],
         ],
         'Sweetalert2' => [
-            'active' => false,
+            'active' => true, //false
             'files' => [
                 [
                     'type' => 'js',
@@ -435,6 +435,19 @@ return [
                 ],
             ],
         ],
+        #Fontawesome
+        'Fontawesome' => [
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'css',
+                    'asset' => false,
+                    'location' => 'css/fontawesome.css',
+                ],
+            ],
+        ],
+
+
     ],
 
     /*

@@ -8,32 +8,36 @@
 
 @section('content')
 <div>
-        @if (Laravel\Fortify\Features::canUpdateProfileInformation())
+       {{-- @if (Laravel\Fortify\Features::canUpdateProfileInformation())--}}
             @livewire('profile.update-profile-information-form')
 
             <x-jet-section-border />
-        @endif
+       {{-- @endif--}}
 
-        @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::updatePasswords()))
+       {{-- @if (Laravel\Fortify\Features::enabled(Laravel\Fortify\Features::updatePasswords()))--}}
             @livewire('profile.update-password-form')
 
             <x-jet-section-border />
-        @endif
+        {{--@endif--}}
 
-        @if (Laravel\Fortify\Features::canManageTwoFactorAuthentication())
+        {{--@if (Laravel\Fortify\Features::canManageTwoFactorAuthentication())--}}
             @livewire('profile.two-factor-authentication-form')
 
             <x-jet-section-border />
-        @endif
+        {{--@endif--}}
 
-        @livewire('profile.logout-other-browser-sessions-form')
+        {{--@livewire('profile.logout-other-browser-sessions-form')
 
-        @if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())
+        {{--@if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())--}}
             <x-jet-section-border />
 
             @livewire('profile.delete-user-form')
-        @endif
+        {{--@endif--}}
     </div>
+@stop
+
+@section('js')
+    @stack('modals')
 @stop
 
 

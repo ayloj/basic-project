@@ -12,7 +12,9 @@ class PermissionController extends Controller
     public function index(){
         $roles = Role::all();
         $permissions = Permission::all();
-        return view('admin.index', compact('roles', 'permissions'));
+        
+        return view('admin.roles-livewire', compact('roles', 'permissions'));
+        //return view('admin.index', compact('roles', 'permissions'));
     }
 
 
